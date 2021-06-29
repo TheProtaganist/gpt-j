@@ -13,4 +13,5 @@ class GPTJ:
         payload = {"context": str(context), "token_max_length": token_max_length, "temperature": temperature,"top_p": top_p}
         URL = requests.post("http://34.90.255.118:5000/generate", params=payload)
         text = URL.json()
-        print(text["text"])
+        output = str(text["text"])
+        return output
