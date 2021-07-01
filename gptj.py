@@ -11,6 +11,6 @@ class GPTJ:
         assert isinstance(temperature, float), "temperature most be float value"
         assert isinstance(top_p, float), "top_p most be float value"
         payload = {"context": str(context), "token_max_length": token_max_length, "temperature": temperature,"top_p": top_p}
-        URL = requests.post("http://34.90.255.118:5000/generate", params=payload)
+        URL = requests.post("http://api.vicgalle.net:5000/generate", params=payload)
         text = URL.json()
         return str(text["text"])
