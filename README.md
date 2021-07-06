@@ -27,7 +27,7 @@ bot: Have a nice day"""
 
 text = input("Enter text: ")
 
-response = g.generate(f"{sample_dialog}. user: {text}", 100, 0.3, 0.6)
+response = g.generate(f"{sample_dialog}. user: {text}.", 100, 0.3, 0.6)
 answer = response.replace("bot: ", "")
 list_of_char = answer.split('user: ', 1)
 answer2 = list_of_char[0]
