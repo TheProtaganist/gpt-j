@@ -1,6 +1,7 @@
 # GPT-J
 A Gpt-j api to use with python
 
+
 ## Parameters
 prompt: the prompt you wish to give to the model
 
@@ -18,6 +19,12 @@ bot: an imaginary character of your choice
 context: the part of the prompt that explains what is happening in the dialog
 
 examples: a dictionary of user intentions and how the bot should respond
+
+# Installing gpt-j
+
+```python
+pip install gptj
+```
 
 # Basic Usage
 
