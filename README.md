@@ -166,3 +166,8 @@ print(response)
 ```
 
 Note: This a very small model of 6B paramters and won't always produce accurate results
+
+## License and copyright 
+© Michael D Arana
+
+licensed under the [MIT License](LICENSE).
