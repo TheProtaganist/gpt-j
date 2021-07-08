@@ -1,6 +1,10 @@
 # GPT-J
 A Gpt-j api to use with python
 
+## Installing gpt-j
+```python
+pip install gptj
+```
 
 ## Parameters
 prompt: the prompt you wish to give to the model
@@ -20,16 +24,10 @@ context: the part of the prompt that explains what is happening in the dialog
 
 examples: a dictionary of user intentions and how the bot should respond
 
-# Installing gpt-j
-
-```python
-pip install gptj
-```
 
 # Basic Usage
 
 ## In the prompt enter something you want to generate
-
 ```python
 from Basic_api import SimpleCompletion
 
@@ -42,7 +40,6 @@ max_length = 100
 ```
 
 ## Temperature controls the creativity of the model
-
 A low temperature means the model will take less changes when completing a prompt
 A high temperature will make the model more creative
 Both temperature and top probability most be a float
@@ -68,7 +65,6 @@ query = SimpleCompletion(prompt, length=max_length, t=temperature, top=top_proba
 ```
 
 ## Finally run the function below
-
 ```python
 query.simple_completion()
 ```
@@ -84,7 +80,6 @@ print(Query)
 # Advanced Usage 
 
 ## Context is a string that is a description of the conversation
-
 ```python
 context = "This is a calculator bot that will answer basic math questions"
 ```
