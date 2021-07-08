@@ -11,10 +11,13 @@ tempurature: controls the ramdomness of the model. higher values will be more ra
 top_p: top probability will use the most likely tokens
 
 ## Advanced Parameters 
-user: The speaker the person who is giving gpt-j a prompt 
-bot: An imaginary character of your choice
-context: The part of the prompt that explains what is happening in the dialog
-examples: A dictionary of user intentions and how the bot should respond
+user: the speaker the person who is giving gpt-j a prompt 
+
+bot: an imaginary character of your choice
+
+context: the part of the prompt that explains what is happening in the dialog
+
+examples: a dictionary of user intentions and how the bot should respond
 
 # Basic Usage
 
