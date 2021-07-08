@@ -1,6 +1,5 @@
 import requests
 
-
 def generate(context, token_max_length, temperature, top_p):
     assert isinstance(token_max_length, int), "Max token most be integer value"
     assert isinstance(temperature, float), "temperature most be float value"
