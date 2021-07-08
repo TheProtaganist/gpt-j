@@ -5,7 +5,7 @@ from security import check_for_insults
 
 class SimpleCompletion:
 
-    def __init__(self, prompt, length=200, t=1, top=0.5):
+    def __init__(self, prompt, length=200, t=0.09, top=1.0):
         self.basic_prompt = str(prompt)
         self.L = length
         self.T = t
