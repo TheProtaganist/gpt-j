@@ -51,7 +51,7 @@ Note values higher that 512 tend to take more time to generate
 query = SimpleCompletion(prompt, length=max_length, t=temperature, top=top_probability)
 ```
 
-## Finally you assign a variable the function simple completion
+## Finally run the function below
 
 ```python
 query.simple_completion()
