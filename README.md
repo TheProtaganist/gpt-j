@@ -2,13 +2,19 @@
 A Gpt-j api to use with python
 
 ## Parameters
-context: the prompt you wish to give to the model
+prompt: the prompt you wish to give to the model
 
 tokens: the number of tokens to generate (values 2048 or less are recommended)
 
 tempurature: controls the ramdomness of the model. higher values will be more random (suggestest to keep under 1.0 or less, something like 0.3 works)
 
 top_p: top probability will use the most likely tokens
+
+## Advanced Parameters 
+user: The speaker the person who is giving gpt-j a prompt 
+bot: An imaginary character of your choice
+context: The part of the prompt that explains what is happening in the dialog
+examples: A dictionary of user intentions and how the bot should respond
 
 # Basic Usage
 
@@ -124,7 +130,7 @@ A Note both temperature and top probability most be a float
 temperature = 0.09
 ```
 
-# Top probability is an alternative way to control the randomness of the model
+## Top probability is an alternative way to control the randomness of the model
 If you are using it set temperature one
 If you are using temperature set top probability to one
 
@@ -132,7 +138,7 @@ If you are using temperature set top probability to one
 top_probability = 1.0
 ```
 
-# Set simply set all the give all the parameters
+## Set simply set all the give all the parameters
 Unfilled parameters will be default values
 I recommend all parameters are filled for better results
 Once everything is done execute the the code below
@@ -146,7 +152,7 @@ response = context_setting.completion(prompt,
               top_p=top_probability)
 ```
 
-# Last but not least print the response
+## Last but not least print the response
 Please be patient depending the given parameters it will take longer sometimes
 For quick responses just use the Basic API which is a simplified version
 
