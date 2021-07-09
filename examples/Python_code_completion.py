@@ -107,8 +107,6 @@ if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
 else:
 print("It is not a leap year")""",
 
-    "calculate factorial of number given by user.": """ """,
-
     "Ask a user to enter 3 numbers one by one. Print the product":
         """import math 
 num = int(input('Enter a number: '))
