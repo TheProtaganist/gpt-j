@@ -79,7 +79,7 @@ print(Query)
 
 # Advanced Usage 
 
-## Context setting is a string that is a description of the conversation
+## Context is a string that is a description of the conversation
 ```python
 from GPTJ.gptj_api import Completion
 
