@@ -172,7 +172,7 @@ Note: This a very small model of 6B paramters and won't always produce accurate 
 
 # License and copyright 
 
-## cerdit 
+## Cerdit 
 This is all possible thanks to https://github.com/vicgalle/gpt-j-api
 Feel free to check out the original api
 
