@@ -152,7 +152,7 @@ I recommend all parameters are filled for better results
 Once everything is done execute the the code below
 
 ```python
-response = context_setting.completion(prompt,
+response = Completion.completion(prompt,
               user=User,
               bot=Bot,
               max_tokens=max_tokens,
