@@ -28,7 +28,7 @@ User = "Student"
 # Name your imaginary friend anything you want
 Bot = "Calculator"
 
-# Max tokens is the maximum lenght of the output response
+# Max tokens is the maximum length of the output response
 max_tokens = 40
 
 # Temperature controls the randomness of the model
