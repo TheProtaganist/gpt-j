@@ -170,10 +170,12 @@ print(response)
 
 Note: This a very small model of 6B paramters and won't always produce accurate results
 
-## Help and support 
-Please go to my home page on github and post an issue if you need help with anything
+# License and copyright 
 
-## License and copyright 
+## cerdit 
+This is all possible thanks to https://github.com/vicgalle/gpt-j-api
+Feel free to check out the original api
+
+## License
 © Michael D Arana
-
 licensed under the [MIT License](LICENSE).
