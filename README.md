@@ -91,6 +91,7 @@ context = "This is a calculator bot that will answer basic math questions"
 Queries are to the left while target responses should be to the right
 Here we can see the user is asking the model math related questions
 The way the model should respond if given on the right
+DO NOT USE PERIODS AT THE END OF USER EXAMPLE! 
 
 ```python
 examples = {
