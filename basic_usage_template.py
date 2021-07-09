@@ -1,4 +1,4 @@
-from gptj.Basic_api import SimpleCompletion
+from GPTJ.Basic_api import SimpleCompletion
 # In the prompt enter something you want to generate
 prompt = "def perfect_square(num):"
 
