@@ -1,4 +1,4 @@
-from gptj.gptj_api import Completion
+from GPTJ.gptj_api import Completion
 
 # Context is a string that is a description of the conversation
 context = "This is a calculator bot that will answer basic math questions"
