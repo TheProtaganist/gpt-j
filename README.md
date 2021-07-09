@@ -1,5 +1,5 @@
 # GPT-J
-A GPT-J api to use with python
+A GPT-J API to use with python
 
 ## Installing gpt-j
 ```
