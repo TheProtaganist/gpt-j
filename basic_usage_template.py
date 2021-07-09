@@ -2,13 +2,14 @@ from GPTJ.Basic_api import SimpleCompletion
 # In the prompt enter something you want to generate
 prompt = "def perfect_square(num):"
 
-# The maximum lenght of the output response
+# The maximum length of the output response
 max_length = 100
 
 # Temperature controls the creativity of the model
-# A low temperature means the model will take less changes when completing a prompt
+# A low temperature means the model will take less changes when completing a prompt 
 # A high temperature will make the model more creative
 # Both temperature and top probability most be a float
+
 temperature = 1.0
 
 # top probability is an alternative way to control the randomness of the model
