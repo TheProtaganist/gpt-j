@@ -36,7 +36,7 @@ prompt = "def perfect_square(num):"
 
 ## The maximum lenght of the output response
 ```python
-max_length = 100
+max_lenght = 100
 ```
 
 ## Temperature controls the creativity of the model
@@ -61,7 +61,7 @@ Here you set query equal to the desired values
 Note values higher that 512 tend to take more time to generate
 
 ```python
-query = SimpleCompletion(prompt, length=max_length, t=temperature, top=top_probability)
+query = SimpleCompletion(prompt, lenght=max_lenght, t=temperature, top=top_probability)
 ```
 
 ## Finally run the function below
