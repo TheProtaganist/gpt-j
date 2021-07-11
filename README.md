@@ -142,7 +142,7 @@ A low temperature means the model will take less changes when completing a promp
 
 A high temperature will make the model more creative and produce more random outputs
 
-A Note both temperature and top probability most be a float
+A Note both temperature and top probability must be a float
 
 ```python
 temperature = 0.09
@@ -157,12 +157,12 @@ If you are using temperature set top probability to one
 top_probability = 1.0
 ```
 
-## Set simply set all the give all the parameters
+## Simply set all the give all the parameters
 Unfilled parameters will be default values
 
 I recommend all parameters are filled for better results
 
-Once everything is done execute the the code below
+Once everything is done execute the code below
 
 ```python
 response = context_setting.completion(prompt,
@@ -174,7 +174,7 @@ response = context_setting.completion(prompt,
 ```
 
 ## Last but not least print the response
-Please be patient depending the given parameters it will take longer sometimes
+Please be patient depending on the given parameters it will take longer sometimes
 
 For quick responses just use the Basic API which is a simplified version
 
@@ -182,14 +182,14 @@ For quick responses just use the Basic API which is a simplified version
 print(response)
 ```
 
-Note: This a very small model of 6B paramters and won't always produce accurate results
+Note: This a very small model of 6B parameters and won't always produce accurate results
 
 # License and copyright 
 
-## Cerdit 
+## Credit 
 This is all possible thanks to https://github.com/vicgalle/gpt-j-api
 
-Feel free to check out the original api
+Feel free to check out the original API
 
 ## License
 © Michael D Arana
