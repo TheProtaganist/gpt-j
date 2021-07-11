@@ -44,7 +44,7 @@ A low temperature means the model will take less changes when completing a promp
 
 A high temperature will make the model more creative
 
-Both temperature and top probability most be a float
+Both temperature and top probability must be a float
 
 ```python
 temperature = 0.09
