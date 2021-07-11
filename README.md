@@ -62,7 +62,7 @@ top_probability = 1.0
 ## Initializing the SimpleCompletion class
 Here you set query equal to the desired values
 
-Note values higher that 512 tend to take more time to generate
+Note values higher than 512 tend to take more time to generate
 
 ```python
 query = SimpleCompletion(prompt, length=max_length, t=temperature, top=top_probability)
