@@ -166,7 +166,7 @@ response = context_setting.completion(prompt,
               bot=Bot,
               temperature=temperature,
               top_p=top_probability,
-              top_k=K
+              top_k=K,
               stream=stream)
 ```
 
