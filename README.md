@@ -145,12 +145,12 @@ top_probability = 1.0
 
 ## seed is used to reproduce same guarantee result for the model (default = 0)
 ```python
-seed = 1.0
+seed = 0
 ```
 
 ## stream is true by default, leave as true if unsure
 ```python
-stream = 1.0
+stream = True
 ```
 
 ## Simply set all the give all the parameters
