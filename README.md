@@ -180,6 +180,7 @@ print(response)
 ```
 
 Note: This a very small model of 6B parameters and won't always produce accurate results
+
 Note: Starting from version 3.0.0 and up the max tokens setting has been removed since the api is using a domain to generate text which fixes the 20 queries per 30 minutes issue
 
 # License and copyright 
