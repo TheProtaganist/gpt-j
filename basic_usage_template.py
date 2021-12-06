@@ -1,4 +1,4 @@
-from gpt_j.Basic_api import SimpleCompletion
+from gpt_j.Basic_api import simple_completion
 # In the prompt enter something you want to generate
 prompt = "def perfect_square(num):"
 
@@ -17,10 +17,9 @@ top_probability = 0.6
 # top_k variable
 k = 40
 
-# Initializing the SimpleCompletion class
 # Here you set query equal to the desired values
 # Note values higher that 512 tend to take more time to generate
-query = SimpleCompletion(prompt, t=temperature, top=top_probability, top_k=k)
+res = SimpleCompletion(prompt, t=temperature, top=top_probability, top_k=k)
 
-# Finally you assign a variable the function simple completion
-query.simple_completion()
+# Finally we print the result
+print(res)
