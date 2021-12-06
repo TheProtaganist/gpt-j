@@ -29,7 +29,7 @@ examples: a dictionary of user intentions and how the bot should respond
 
 ## In the prompt enter something you want to generate
 ```python
-from gpt_j.Basic_api import SimpleCompletion
+from gpt_j.Basic_api import simple_completion
 
 prompt = "def perfect_square(num):"
 ```
