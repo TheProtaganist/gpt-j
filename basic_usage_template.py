@@ -7,10 +7,10 @@ prompt = "def perfect_square(num):"
 # A high temperature will make the model more creative
 # Both temperature and top probability must be a float
 
-temperature = 1.0
+temperature = 0.6
 
 # top probability is an alternative way to control the randomness of the model
-top_probability = 0.6
+top_probability = 1.0
 
 # top_k variable
 k = 40
