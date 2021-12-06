@@ -1,9 +1,6 @@
-from GPTJ.Basic_api import SimpleCompletion
+from gpt_j.Basic_api import SimpleCompletion
 # In the prompt enter something you want to generate
 prompt = "def perfect_square(num):"
-
-# The maximum length of the output response
-max_length = 100
 
 # Temperature controls the creativity of the model
 # A low temperature means the model will take less changes when completing a prompt 
@@ -17,10 +14,13 @@ temperature = 1.0
 # If you are using temperature set top probability to one
 top_probability = 0.6
 
+# top_k variable
+k = 40
+
 # Initializing the SimpleCompletion class
 # Here you set query equal to the desired values
 # Note values higher that 512 tend to take more time to generate
-query = SimpleCompletion(prompt, length=max_length, t=temperature, top=top_probability)
+query = SimpleCompletion(prompt, t=temperature, top=top_probability, top_k=k)
 
 # Finally you assign a variable the function simple completion
 query.simple_completion()
