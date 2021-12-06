@@ -32,16 +32,16 @@ Bot = "Calculator"
 # A low temperature means the model will take less changes when completing a prompt
 # A high temperature will make the model more creative and produce more random outputs
 # Note both temperature and top probability most be a float
-temperature = 0.09
+temperature = 0.101
 
 # Top probability is an alternative way to control the randomness of the model
-# If you are using it set temperature one
+# If you are using it set temperature to 0.0001
 # If you are using temperature set top probability to one
-top_probability = 1.0
+top_probability = 0.53
 
 # A method for locating the top k largest entries in the last dimension
 # k is a 0-D tensor, if you are unsure set this to 0
-top_k = 40
+K = 40
 
 
 # Used to get more guaranteed results in the sequence
