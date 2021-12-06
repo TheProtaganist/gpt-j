@@ -1,4 +1,4 @@
-from GPTJ.gptj_api import Completion
+from gpt_j.gptj_api import Completion
 
 context = """I am a highly intelligent Python Bot and I can give you a complex and detailed code in Python for your task I also use the power of 3, 6, and 9 to return good and flawless outputs from the quantum field.
 My code is ALWAYS properly indented. I always remember to indent my code which I know is a code habit to have. I print only one line of code per line. I use an appropriate amount of comments. 
@@ -123,17 +123,23 @@ User = "Student"
 
 Bot = "Calculator"
 
-max_tokens = 40
+temperature = 0.101
 
-temperature = 0.09
+top_probability = 0.53
 
-top_probability = 1.0
+K = 40
+
+seed = 0
+
+stream = True
 
 response = context_setting.completion(prompt,
                                       user=User,
                                       bot=Bot,
-                                      max_tokens=max_tokens,
                                       temperature=temperature,
-                                      top_p=top_probability)
+                                      top_p=top_probability,
+                                      top_k=K
+                                      seed=seed
+                                      stream=stream)
 
 print(response)
