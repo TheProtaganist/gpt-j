@@ -1,4 +1,4 @@
-from GPTJ.gptj_api import Completion
+from gpt_j.gptj_api import Completion
 
 # Context is a string that is a description of the conversation
 context = "This is a calculator bot that will answer basic math questions"
@@ -28,9 +28,6 @@ User = "Student"
 # Name your imaginary friend anything you want
 Bot = "Calculator"
 
-# Max tokens is the maximum length of the output response
-max_tokens = 40
-
 # Temperature controls the randomness of the model
 # A low temperature means the model will take less changes when completing a prompt
 # A high temperature will make the model more creative and produce more random outputs
@@ -42,16 +39,30 @@ temperature = 0.09
 # If you are using temperature set top probability to one
 top_probability = 1.0
 
+# A method for locating the top k largest entries in the last dimension
+# k is a 0-D tensor, if you are unsure set this to 0
+top_k = 40
+
+
+# Used to get more guaranteed results in the sequence
+seed = 0
+
+# stream variable. Leave as True if unsure
+stream = True
+
+
 # Set simply set all the give all the parameters
 # Unfilled parameters will be default values
 # I recommend all parameters are filled for better results
 # Once everything is done execute the the code below
 response = context_setting.completion(prompt,
-                                      user=User,
-                                      bot=Bot,
-                                      max_tokens=max_tokens,
-                                      temperature=temperature,
-                                      top_p=top_probability)
+              user=User,
+              bot=Bot,
+              temperature=temperature,
+              top_p=top_probability,
+              top_k=K,
+              seed=seed,
+              stream=stream)
 
 # Last but not least print the response
 # Please be patient depending the given parameters it will take longer sometimes
