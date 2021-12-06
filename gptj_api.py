@@ -61,7 +61,7 @@ class Completion(GPTJ_API):
                 self.amount_delete = len(self.newer_list) - 1
                 del self.newer_list[self.amount_delete]
                 self.new_prompt = "\n\n".join(self.newer_list)
-                self.response = generate(f"{self.new_prompt} {user}: {self.main_intention}",
+                self.response = generate(f"{self.new_prompt} {user}: {self.main_intention}.",
                                          temperature=temperature,
                                          top_p=top_p,
                                          top_k=top_k,
