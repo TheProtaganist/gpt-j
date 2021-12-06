@@ -120,7 +120,7 @@ Bot = "Calculator"
 
 ## 0-D tensor used to find top k largest entries for the last dimension
 ```python
-K = 50
+K = 40
 ```
 
 ## Temperature controls the randomness of the model
