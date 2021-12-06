@@ -36,7 +36,7 @@ prompt = "def perfect_square(num):"
 
 ##  Top k 0-D variable
 ```python
-top_k = 40
+k = 40
 ```
 
 ## Temperature controls the creativity of the model
