@@ -138,8 +138,8 @@ response = context_setting.completion(prompt,
                                       bot=Bot,
                                       temperature=temperature,
                                       top_p=top_probability,
-                                      top_k=K
-                                      seed=seed
+                                      top_k=K,
+                                      seed=seed,
                                       stream=stream)
 
 print(response)
