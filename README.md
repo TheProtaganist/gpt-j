@@ -29,14 +29,14 @@ examples: a dictionary of user intentions and how the bot should respond
 
 ## In the prompt enter something you want to generate
 ```python
-from GPTJ.Basic_api import SimpleCompletion
+from gpt_j.Basic_api import SimpleCompletion
 
 prompt = "def perfect_square(num):"
 ```
 
-## The maximum length of the output response
+##  Top k 0-D variable
 ```python
-max_length = 100
+top_k = 40
 ```
 
 ## Temperature controls the creativity of the model
@@ -47,7 +47,7 @@ A high temperature will make the model more creative
 Both temperature and top probability must be a float
 
 ```python
-temperature = 0.09
+temperature = 0.101
 ```
 
 ## top probability is an alternative way to control the randomness of the model
@@ -56,36 +56,22 @@ If you are using top probability set temperature one
 If you are using temperature set top probability to one
 
 ```python
-top_probability = 1.0
+top_probability = 0.53
 ```
 
-## Initializing the SimpleCompletion class
-Here you set query equal to the desired values
-
-Note values higher than 512 tend to take more time to generate
+## Run the function below
+Note: values higher than 512 tend to take more time to generate
 
 ```python
-query = SimpleCompletion(prompt, length=max_length, t=temperature, top=top_probability)
-```
-
-## Finally run the function below
-```python
-query.simple_completion()
-```
-
-## optional
-You can assign the results to a string
-```python
-Query = query.simple_completion()
-
-print(Query)
+res = simple_completion(prompt, temp=temperature, top=top_probability, top_k=k)
+print(res)
 ```
 
 # Advanced Usage 
 
 ## Context is a string that is a description of the conversation
 ```python
-from GPTJ.gptj_api import Completion
+from gpt_j.gptj_api import Completion
 
 context = "This is a calculator bot that will answer basic math questions"
 ```
@@ -132,9 +118,9 @@ User = "Student"
 Bot = "Calculator"
 ```
 
-## Max tokens is the maximum length of the output response
+## 0-D tensor used to find top k largest entries for the last dimension
 ```python
-max_tokens = 50
+K = 50
 ```
 
 ## Temperature controls the randomness of the model
@@ -145,16 +131,26 @@ A high temperature will make the model more creative and produce more random out
 A Note both temperature and top probability must be a float
 
 ```python
-temperature = 0.09
+temperature = 0.101
 ```
 
 ## Top probability is an alternative way to control the randomness of the model
-If you are using it set temperature one
+If you are using it set temperature 0.0001
 
-If you are using temperature set top probability to one
+If you are using temperature set top probability to 1.0
 
 ```python
 top_probability = 1.0
+```
+
+## seed is used to reproduce same guarantee result for the model (default = 0)
+```python
+seed = 1.0
+```
+
+## stream is true by default, leave as true if unsure
+```python
+stream = 1.0
 ```
 
 ## Simply set all the give all the parameters
@@ -168,9 +164,10 @@ Once everything is done execute the code below
 response = context_setting.completion(prompt,
               user=User,
               bot=Bot,
-              max_tokens=max_tokens,
               temperature=temperature,
-              top_p=top_probability)
+              top_p=top_probability,
+              top_k=K
+              stream=stream)
 ```
 
 ## Last but not least print the response
@@ -183,6 +180,7 @@ print(response)
 ```
 
 Note: This a very small model of 6B parameters and won't always produce accurate results
+Note: Starting from version 3.0.0 and up the max tokens setting has been removed since the api is using a domain to generate text which fixes the 20 queries per 30 minutes issue
 
 # License and copyright 
 
