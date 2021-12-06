@@ -17,7 +17,7 @@ k = 40
 
 # Here you set query equal to the desired values
 # Note values higher that 512 tend to take more time to generate
-res = simple_completion(prompt, t=temperature, top=top_probability, top_k=k)
+res = simple_completion(prompt, temp=temperature, top=top_probability, top_k=k)
 
 # Finally we print the result
 print(res)
