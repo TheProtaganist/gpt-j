@@ -28,6 +28,10 @@ User = "Student"
 # Name your imaginary friend anything you want
 Bot = "Calculator"
 
+# Max Tokens is the maximum number of tokens you want to generate
+# This is the maximum number of tokens you can use to generate a response
+max_tokens = 100
+
 # Temperature controls the randomness of the model
 # A low temperature means the model will take less changes when completing a prompt
 # A high temperature will make the model more creative and produce more random outputs
@@ -39,18 +43,6 @@ temperature = 0.101
 # If you are using temperature set top probability to one
 top_probability = 0.53
 
-# A method for locating the top k largest entries in the last dimension
-# k is a 0-D tensor, if you are unsure set this to 0
-K = 40
-
-
-# Used to get more guaranteed results in the sequence
-seed = 0
-
-# stream variable. Leave as True if unsure
-stream = True
-
-
 # Set simply set all the give all the parameters
 # Unfilled parameters will be default values
 # I recommend all parameters are filled for better results
@@ -58,11 +50,9 @@ stream = True
 response = context_setting.completion(prompt,
               user=User,
               bot=Bot,
+              max_tokens=max_tokens,
               temperature=temperature,
-              top_p=top_probability,
-              top_k=K,
-              seed=seed,
-              stream=stream)
+              top_p=top_probability)
 
 # Last but not least print the response
 # Please be patient depending the given parameters it will take longer sometimes
