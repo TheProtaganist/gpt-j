@@ -29,7 +29,7 @@ examples: a dictionary of user intentions and how the bot should respond
 
 ## In the prompt enter something you want to generate
 ```python
-from GPTJ.Basic_api import SimpleCompletion
+from gpt_j.Basic_api import SimpleCompletion
 
 prompt = "def perfect_square(num):"
 ```
@@ -85,7 +85,7 @@ print(Query)
 
 ## Context is a string that is a description of the conversation
 ```python
-from GPTJ.gptj_api import Completion
+from gpt_j.gptj_api import Completion
 
 context = "This is a calculator bot that will answer basic math questions"
 ```
