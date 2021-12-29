@@ -184,6 +184,11 @@ print(response)
 
 Note: This a very small model of 6B parameters and won't always produce accurate results
 
+## Disclaimer
+
+I have removed the security from the API, please don't use for unethical use!
+I am not responsible for anything you do with the API
+
 # License and copyright 
 
 ## Credit 
