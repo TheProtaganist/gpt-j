@@ -65,7 +65,7 @@ Here you set query equal to the desired values
 Note values higher than 512 tend to take more time to generate
 
 ```python
-query = simple_completion(prompt, length=max_length, t=temperature, top=top_probability)
+query = simple_completion(prompt, length=max_length, temp=temperature, top=top_probability)
 ```
 
 ## Finally run the function below
