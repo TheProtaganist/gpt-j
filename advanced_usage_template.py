@@ -43,18 +43,28 @@ temperature = 0.101
 # If you are using temperature set top probability to one
 top_probability = 0.53
 
+# top_k is the number of top responses to return
+# This is the number of responses the model will return
+top_k = 1
+
+# Rep is the number of times the model will repeat itself
+# This is the number of times the model will repeat itself when generating a response
+rep = 1.0
+
 # Set simply set all the give all the parameters
 # Unfilled parameters will be default values
 # I recommend all parameters are filled for better results
-# Once everything is done execute the the code below
+# Once everything is done execute  the code below
 response = context_setting.completion(prompt,
               user=User,
               bot=Bot,
               max_tokens=max_tokens,
               temperature=temperature,
-              top_p=top_probability)
+              top_p=top_probability,
+              top_k=top_k,
+              rep=rep)
 
 # Last but not least print the response
-# Please be patient depending the given parameters it will take longer sometimes
+# Please be patient depending on the given parameters it will take longer sometimes
 # For quick responses just use the Basic API which is a simplified version
 print(response)
