@@ -25,7 +25,7 @@ rep = 1.0
 
 # Here you set query equal to the desired values
 # Note values higher that 512 tend to take more time to generate
-res = simple_completion(prompt, length=Max, temp=temperature, top_p=top_probability, top_k=k, rep=rep)
+res = simple_completion(prompt, length=Max, temp=temperature, top_p=top_probability, top_k=top_k, rep=rep)
 
 # Finally we print the result
 print(res)
