@@ -1,3 +1,7 @@
+# Notice
+
+Until Futher notice this API is officialy down, until I can manage to access gptj or use a new model completely
+
 # GPT-J
 A GPT-J API to use with python
 
